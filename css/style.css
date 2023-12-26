@@ -603,3 +603,7 @@ a[data-lightbox="roadtrip"]:hover  > div {
 a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
   visibility: hidden;
 } 
+
+#blog-header-image {
+  max-height: 600px;
+}
