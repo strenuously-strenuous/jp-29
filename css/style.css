@@ -32,7 +32,7 @@ h6,
 
 .navbar-brand img {
   max-height: 75px;
-    max-width: 200px;
+  max-width: 200px;
 }
 
 /* .section-title {
@@ -266,7 +266,8 @@ header > video {
 }
 
 #pg-header-banner {
-  min-height: 500px;
+  min-height: 650px;
+  /* min-height: 500px; */
 }
 
 #wrapper-minus-top {
@@ -366,6 +367,7 @@ header > video {
 }
 blockquote {
   border-left-color: var(--hightlight) !important;
+  background-color: var(--hightlight-secondary);
 }
 
 .blog-h-common img {
@@ -514,7 +516,6 @@ nav .dropdown-item.active,
 
 /* gallery */
 
-
 #mystory-header-img {
   object-position: top;
 }
@@ -529,81 +530,84 @@ nav .dropdown-item.active,
   font-size: 13px;
 }
 
-
 /* gallery */
 .btn-whatsapp-pulse {
-	color: white;
-	/* position: fixed; */
-	bottom: 20px;
-	right: 20px;
-	font-size: 16px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 0;
-	height: 0;
-	padding: 35px;
-	text-decoration: none;
-	border-radius: 50%;
-	animation-name: pulse;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
+  color: white;
+  /* position: fixed; */
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  padding: 35px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-	}
-	80% {
-		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-	}
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  80% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
 }
 
 .btn-whatsapp-pulse-border {
-	bottom: 120px;
-	right: 20px;
-	animation-play-state: paused;
+  bottom: 120px;
+  right: 20px;
+  animation-play-state: paused;
 }
 
 .btn-whatsapp-pulse-border::before {
-	content: "";
-	position: absolute;
-	border-radius: 50%;
-	padding: 25px;
-	border: 1px solid white;
-	opacity: 0.75;
-	animation-name: pulse-border;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  border: 1px solid white;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes pulse-border {
-	0% {
-		padding: 25px;
-		opacity: 0.75;
-	}
-	75% {
-		padding: 50px;
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    padding: 25px;
+    opacity: 0.75;
+  }
+  75% {
+    padding: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
 
 /* gallery */
 
-a[data-lightbox="roadtrip"]:hover  > div {
+a[data-lightbox="roadtrip"]:hover > div {
   visibility: visible;
   transition: all 0.5s;
-} 
+}
 a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
   visibility: hidden;
-} 
+}
 
 #blog-header-image {
   max-height: 600px;
+}
+
+.btn:hover {
+  background-color: var(--hightlight-secondary) !important;
+  color: var(--black);
 }
