@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap');
+
+
+
 :root {
   --light-grey: #e6e8ea;
   --grey: #949494;
@@ -17,6 +22,15 @@
   -webkit-user-drag: none;
 }
 body {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Libre Bodoni", serif !important;
 }
 
@@ -254,7 +268,8 @@ nav {
 * Gradient link: https://www.css-gradient.com/?c1=1d6401&c2=b3a987&gt=r&gd=dcc
 */
   /* background: radial-gradient(at center, transparent, #222222b0 ); */
-  background: radial-gradient(at center, #00000094, #222222);
+  /* background: radial-gradient(at center, #00000094, #222222); */
+  background: linear-gradient(to right, #222222f0, transparent);
 }
 
 header > video {
