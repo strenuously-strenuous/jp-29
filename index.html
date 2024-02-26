@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jolene Prins</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -56,8 +66,6 @@
   </head>
   <body>
     <header class="min-vh-100 position-relative mw-100 d-flex flex-column">
-      <!-- poster="https://via.placeholder.com/1920x1080/000.svg" -->
-      <!-- src="https://writer.ancorathemes.com/wp-content/uploads/2022/01/video-bg.mp4" -->
       <video
         autoplay
         muted
@@ -69,7 +77,7 @@
         class="overlay-video-wrapper w-100 h-100 position-absolute top-0 start-0 end-0 bottom-0"
       ></div>
       <nav
-        class="main-nav-js navbar navbar-expand-lg z-3 start-0 end-0 top-0"
+        class="main-nav-js navbar navbar-expand-lg z-3 start-0 end-0 top-0 font-bodoni"
         data-bs-theme="dark"
       >
         <div class="container">
@@ -113,12 +121,17 @@
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="beyond-the-saree.html"
-                      >Beyond The Saree</a
+                      >Beyond the Saree</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="beyond-the-wooden-shoes.html"
-                      >Beyond The Wooden Shoes</a
+                      >Beyond wooden shoes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="beyond-the-wooden-shoes.html"
+                      >Getting more things done</a
                     >
                   </li>
                   <!-- <li><hr class="dropdown-divider" /></li>
@@ -175,7 +188,7 @@
       <div class="container py-5 my-5 flex-grow-1 align-items-center d-flex">
         <div class="row">
           <div class="col-12 text-white">
-            <h1 class="display-1 fw-bold theme-color-hightlight">
+            <h1 class="display-1 fw-bold theme-color-hightlight lh-1">
               Crossing borders, <br />
               one story <br />
               at the time
@@ -191,20 +204,18 @@
     </header>
 
     <main class="pt-5 mt-5">
-      <section class="container">
+      <section class="container-fluid">
         <h2 class="text-center display-4 fw-bold mb-5 mt-3">
-          Latest From the Blog<span not="blog-typeit"></span>
+          Latest from the Blog
         </h2>
 
-        <div class="swiper" id="latest-blog">
+        <div class="swiper px-5" id="latest-blog">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#" class="stretched-link d-inline-block overflow-hidden">
-                <img
-                  class="img-fluid stretched-link-img object-fit-cover h-100"
-                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-2.jpg?resize=890%2C510&ssl=1"
-                  alt=""
-                />
+                <img class="img-fluid stretched-link-img object-fit-cover h-100
+                blog-img-scale" blog-img-scale ""
+                src="blog-assets/img/Healthcare croped.jpg" alt="" />
               </a>
               <div class="mt-4">
                 <div class="section-title">Beyond the Saree</div>
@@ -212,7 +223,7 @@
                 <div
                   class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
                 >
-                  <span>15th November, 2023</span>
+                  <span>15<sup>th</sup> November, 2023</span>
                   <i class="fa-solid fa-circle"></i>
                   <span>3 Comments</span>
                 </div>
@@ -232,7 +243,7 @@
                 <div
                   class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
                 >
-                  <span>22nd October, 2023</span>
+                  <span>22<sup>nd</sup> October, 2023</span>
                   <i class="fa-solid fa-circle"></i>
                   <span>3 Comments</span>
                 </div>
@@ -252,7 +263,7 @@
                 <div
                   class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
                 >
-                  <span>7th November 2023</span>
+                  <span>7<sup>th</sup> November 2023</span>
                   <i class="fa-solid fa-circle"></i>
                   <span>0 Comments</span>
                 </div>
@@ -272,7 +283,7 @@
                 <div
                   class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
                 >
-                  <span>23rd November 2023</span>
+                  <span>23<sup>rd</sup> November 2023</span>
                   <i class="fa-solid fa-circle"></i>
                   <span>0 Comments</span>
                 </div>
@@ -292,14 +303,19 @@
                 <div
                   class="mt-3 fs-7 text-secondary swiper-post-date d-flex align-items-center gap-2"
                 >
-                  <span>11th February 2023</span>
+                  <span>11<sup>th</sup> February 2023</span>
                   <i class="fa-solid fa-circle"></i>
                   <span>1 Comments</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div
+            class="swiper-button-prev border rounded-circle p-5 bg-dark text-white start-0 translate-middle-x z-3 top-100 position-absolute"
+          ></div>
+          <div
+            class="swiper-button-next border rounded-circle p-5 bg-dark text-white start-100 translate-middle-x z-3 top-100 position-absolute"
+          ></div>
         </div>
       </section>
       <section
@@ -748,7 +764,9 @@
           >My Story</a
         >
         <a href="blog.html" class="text-decoration-none text-light">Blogs</a>
-        <a href="gallery.html" class="text-decoration-none text-light">Gallery</a>
+        <a href="gallery.html" class="text-decoration-none text-light"
+          >Gallery</a
+        >
         <a href="contact.html" class="text-decoration-none text-light"
           >Contact</a
         >
@@ -834,23 +852,16 @@
       const swiper = new Swiper("#latest-blog", {
         direction: "horizontal",
         loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        spaceBetween: 30,
+        spaceBetween: 10,
         breakpoints: {
           0: {
             slidesPerView: 1,
-            spaceBetween: 10,
           },
           640: {
             slidesPerView: 2,
-            spaceBetween: 20,
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 30,
           },
         },
 
