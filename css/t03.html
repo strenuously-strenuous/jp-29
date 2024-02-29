@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unblur Text on Scroll</title>
+    <style>
+      /* Style the text container for better presentation */
+      .text-container {
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      /* Initially blur the text elements */
+      .unblur-text {
+        filter: blur(5px);
+      }
+
+      body {
+        height: 1500px;
+        padding-top: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Scroll down to see the text become unblurred!</h1>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script>
+      // Select all text elements with the class "unblur-text"
+      const textElements = document.querySelectorAll(".unblur-text");
+
+      // Function to unblur the text when it enters the viewport
+      const unblurText = (element) => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              gsap.to(element, {
+                filter: "blur(0)",
+                opacity: 1,
+                duration: 1,
+                ease: "power2.out",
+              });
+              observer.disconnect(); // Stop observing once unblurred
+            }
+          });
+        });
+
+        observer.observe(element);
+      };
+
+      // Apply the unblurText function to each text element
+      textElements.forEach((element) => {
+        unblurText(element);
+      });
+    </script>
+  </body>
+</html>
