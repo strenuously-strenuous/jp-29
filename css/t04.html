@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word-by-Word Unblur Text on Scroll</title>
+    <style>
+      .text-container {
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .unblur-text {
+        filter: blur(5px);
+      }
+
+      .unblur-text span {
+        display: inline-block;
+        animation: unblur 1s ease-in-out forwards;
+      }
+
+      @keyframes unblur {
+        from {
+          filter: blur(5px);
+        }
+        to {
+          filter: blur(0);
+        }
+      }
+
+      body {
+        height: 1500px;
+        padding-top: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Scroll down to see the text become unblurred word-by-word!</h1>
+
+    <section class="text-container">
+      <p class="unblur-text">
+        This <span>is</span> some <span>dummy</span> text <span>that</span> will
+        <span>be</span> initially <span>blurred</span> and
+        <span>become</span> clear <span>word</span>-<span>by</span>-<span
+          >word</span
+        >
+        as you scroll down.
+      </p>
+    </section>
+
+    <script>
+      const textElement = document.querySelector(".unblur-text");
+      const characterSpans = textElement.querySelectorAll("span");
+
+      window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+        const elementTop = textElement.getBoundingClientRect().top;
+
+        // Adjust threshold based on desired reveal distance
+        const threshold = elementTop + textElement.offsetHeight / 2;
+
+        if (scrollPosition >= threshold) {
+          characterSpans.forEach((span, index) => {
+            setTimeout(() => {
+              span.style.animation = "none"; // Remove initial animation
+              span.style.filter = "blur(0)"; // Unblur
+            }, index * 100); // Add delay for each word (adjust as needed)
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
