@@ -20,7 +20,7 @@
   -webkit-user-drag: none;
 }
 body {
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Open sans", serif;
   /* font-weight: 300 !important; */
 }
 
@@ -662,4 +662,8 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
   margin-right: 50px !important;
   box-shadow: 2px 4px 5px #ccc;
   z-index: 9999;
+}
+
+#main-article p {
+  font-size: 18px;
 }
