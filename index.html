@@ -204,7 +204,7 @@
     </header>
 
     <main class="pt-5 mt-5">
-      <section class="container-fluid">
+      <section class="container-fluid mb-5 pb-5">
         <h2 class="text-center display-4 fw-bold mb-5 mt-3">
           Latest from the Blog
         </h2>
@@ -219,7 +219,7 @@
               <!-- <img src="img/angle-left_10513294.png" alt="" width="30" /> -->
               <img src="img/arrow-left_10513320.png" alt="" width="30" />
             </div>
-            <div class="swiper" id="latest-blog">
+            <div class="swiper pt-5" id="latest-blog">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a
@@ -950,8 +950,8 @@
       const swiper = new Swiper("#latest-blog", {
         direction: "horizontal",
         loop: true,
-        spaceBetween: 10,
-        // centeredSlides: true,
+        spaceBetween: 20,
+        centeredSlides: true,
         breakpoints: {
           0: {
             slidesPerView: 1,
@@ -975,7 +975,7 @@
         },
       });
 
-      new Swiper("#instagram-swiper", {
+      const instaslider = new Swiper("#instagram-swiper", {
         direction: "horizontal",
         loop: true,
         speed: 1200,
@@ -996,10 +996,14 @@
             slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 6,
+            slidesPerView: 5,
           },
         },
       });
+
+      //       instaslider.on('slideChange', function() {
+      //   console.log(swiper.realIndex);
+      // });
 
       let vid = document.querySelector("header video");
       vid.playbackRate = 0.5;
