@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -963,7 +964,21 @@
         disableOnInteraction: false,
         },
         spaceBetween: 0,
-        slidesPerView: 6,
+        // slidesPerView: 6,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          420: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 6,
+          },
+        },
       })
 
       let vid = document.querySelector("header video");
