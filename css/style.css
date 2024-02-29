@@ -140,7 +140,9 @@ footer {
   background-color: var(--hightlight-secondary);
 }
 #latest-blog .swiper-slide .stretched-link {
-  height: 330px;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 #latest-blog .swiper-slide .stretched-link-img,
@@ -168,11 +170,6 @@ footer {
 }
 #instagram-feed a:hover .card-img-overlay::after {
   border-top: 1px solid white;
-}
-
-/* .quotes, */
-.instagram-posts div:first-child {
-  background-color: var(--hightlight);
 }
 
 .quotes {
@@ -633,5 +630,10 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 
 .swiper-button-next,
 .swiper-button-prev {
-  top: 165px !important;
+  top: 25% !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #e6e8ea66 !important;
 }
