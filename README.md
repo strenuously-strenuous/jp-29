@@ -13,3 +13,10 @@ follow intagram to be in single thread with auto scroll
 
 freepik
 <a href="https://www.freepik.com/icon/angle-left_10513294">Icon by UIcons</a>
+
+send desgin option to make homepage more interresting, its bland now.
+fix instagram section, space bottom. in a container, make it 3 or 4 slides
+
+fix blur on quote effect, make it more slower
+
+listen to call recording.

@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jolene Prins</title>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
     <!-- favicon -->
@@ -212,8 +230,8 @@
         <div class="" id="swiper-latest-blog-parent">
           <div class="custom-wrapper position-relative">
             <div
-              class="start-0 border rounded-circle p-4 border-1 border-dark text-dark translate-middle-x z-3 position-absolute"
-              style="top: 30%"
+              class="border rounded-circle p-4 border-1 border-dark text-dark translate-middle-x z-3 position-absolute"
+              style="top: 30%; left: 10%"
               id="prev-blog"
             >
               <!-- <img src="img/angle-left_10513294.png" alt="" width="30" /> -->
@@ -417,7 +435,7 @@
           - Jolene Prins -
         </p>
       </section>
-      <section class="instagram-posts mt-5 pt-5">
+      <section class="instagram-posts my-5 py-5 container">
         <div class="pb-5">
           <h2 class="text-center">Follow me on Instagram</h2>
         </div>
@@ -968,8 +986,9 @@
 
       const swiper = new Swiper("#latest-blog", {
         direction: "horizontal",
-        loop: true,
+        // loop: true,
         spaceBetween: 20,
+        initialSlide: 1,
         centeredSlides: true,
         breakpoints: {
           0: {
@@ -979,7 +998,7 @@
             slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 3.5,
+            slidesPerView: 3.7,
           },
         },
 
@@ -1015,7 +1034,7 @@
             slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
           },
         },
       });
@@ -1040,13 +1059,13 @@
       gsap.to(".quote-patch-1", {
         scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
         x: "100%",
-        duration: 60,
+        duration: 10,
         scrollTrigger: {
           trigger: "#swiper-latest-blog-parent",
-          start: "30%",
+          start: "100%",
           // end: "center 100px",
           scrub: true,
-          // markers: true,
+          markers: true,
         },
       });
       gsap.to(".quote-patch-2", {

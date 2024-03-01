@@ -14,11 +14,11 @@
   --tertiary:; */
 }
 
-* {
+/* * {
   -webkit-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
-}
+} */
 body {
   font-family: "Open sans", serif;
   /* font-weight: 300 !important; */
@@ -632,12 +632,13 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 }
 
 #instagram-swiper figure {
-  width: 300px;
+  /* width: 300px; */
+  width: 100%;
   aspect-ratio: 1/1;
 }
 
 #latest-blog .stretched-link + div {
-  max-width: 310px;
+  max-width: 350px;
   width: 100%;
   padding: 15px 18px;
   margin-top: -100px;
@@ -647,9 +648,10 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
   transform: translateX(-50%);
   background: #fff;
 }
-#swiper-latest-blog-parent {
+
+/* #swiper-latest-blog-parent {
   padding-left: 15%;
-}
+} */
 
 #mystory-header-img {
   object-position: center -109px !important;
@@ -666,4 +668,8 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 
 #main-article p {
   font-size: 18px;
+}
+
+#latest-blog {
+  padding-bottom: 180px !important;
 }
