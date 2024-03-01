@@ -660,7 +660,7 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
   transition: all 0.5s;
   margin-inline: 30px;
   margin-right: 50px !important;
-  box-shadow: 2px 4px 5px #ccc;
+  /* box-shadow: 2px 4px 5px #ccc; */
   z-index: 9999;
 }
 
