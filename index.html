@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jolene Prins</title>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
     <!-- favicon -->
@@ -102,7 +120,7 @@
                   class="nav-link fw-bold"
                   aria-current="page"
                   href="mystory.html"
-                  >My Story</a
+                  >My story</a
                 >
               </li>
               <!-- <li class="nav-item">
@@ -204,7 +222,7 @@
     </header>
 
     <main class="pt-5 mt-5">
-      <section class="container-fluid">
+      <section class="container-fluid mb-5 pb-5">
         <h2 class="text-center display-4 fw-bold mb-5 mt-3">
           Latest from the Blog
         </h2>
@@ -212,22 +230,25 @@
         <div class="" id="swiper-latest-blog-parent">
           <div class="custom-wrapper position-relative">
             <div
-              class="start-0 border rounded-circle p-4 border-1 border-dark text-dark translate-middle-x z-3 position-absolute"
-              style="top: 30%"
+              class="border rounded-circle p-4 border-1 border-dark text-dark translate-middle-x z-3 position-absolute"
+              style="top: 30%; left: 10%"
               id="prev-blog"
             >
               <!-- <img src="img/angle-left_10513294.png" alt="" width="30" /> -->
               <img src="img/arrow-left_10513320.png" alt="" width="30" />
             </div>
-            <div class="swiper" id="latest-blog">
+            <div class="swiper pt-5" id="latest-blog">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a
                     href="#"
                     class="stretched-link d-inline-block overflow-hidden"
                   >
-                    <img class="img-fluid stretched-link-img object-fit-cover h-100"
-                    src="blog-assets/img/Healthcare croped copy.jpg" alt="" />
+                    <img
+                      class="img-fluid stretched-link-img object-fit-cover h-100"
+                      src="blog-assets/img/Healthcare croped copy.jpg"
+                      alt=""
+                    />
                   </a>
                   <div class="mt-4">
                     <div class="section-title">Beyond the Saree</div>
@@ -365,21 +386,56 @@
         <div
           class="position-absolute top-0 start-0 bottom-0 end-0 quote-overlay"
         ></div>
+        <style>
+          /* Style the text container for better presentation */
+          .text-container {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
 
-        <p class="display-5 fw-bold pt-5 mt-5 position-relative z-2 text-white">
-          "Within the chaos, it’s possible to find a <br />
+          /* Initially blur the text elements */
+          .unblur-text {
+            height: 92px;
+            background-color: transparent;
+            /* background: red; */
+            transform-style: preserve-3d;
+            will-change: transform;
+            backdrop-filter: blur(5px);
+          }
+        </style>
+
+        <div
+          class="display-5 fw-bold pt-5 mt-5 z-2 text-white position-relative d-inline overflow-hidden"
+        >
+          "Within the chaos, it’s possible to find a
+          <br />
           certain order and calm that can only be found <br />
-          if you discover who you are…for which you need the chaos."
-          <!-- <span id="type_write" class="text-decoration-underline"></span>." -->
-        </p>
-        <p class="fw-normal fs-4 mb-5 text-white position-relative z-2">
+          if you discover who you are…for which you <br />
+          need the chaos."
+
+          <div class="position-absolute top-0 start-0 end-0 bottom-0 z-3">
+            <div
+              class="unblur-text quote-patch quote-patch-1 w-100"
+              style=""
+            ></div>
+            <div
+              class="unblur-text quote-patch quote-patch-2 w-100"
+              style=""
+            ></div>
+            <div class="unblur-text quote-patch quote-patch-3 w-100"></div>
+            <div class="unblur-text quote-patch quote-patch-4 w-100"></div>
+          </div>
+        </div>
+
+        <p
+          class="fw-normal fs-4 mb-5 text-white text-center w-100 d-block mx-auto z-2"
+        >
           - Jolene Prins -
-          <!-- <br />
-          <span class="fw-light small text-muted" id="quote-designation"
-            >Creative Director</span> -->
         </p>
       </section>
-      <section class="instagram-posts mt-5 pt-5">
+      <section class="instagram-posts my-5 py-5 container">
         <div class="pb-5">
           <h2 class="text-center">Follow me on Instagram</h2>
         </div>
@@ -510,7 +566,11 @@
         <div class="">
           <div class="imgs_wrapper instagram buzzblog-instagram buzzi">
             <div class="images clearfix buzzi-list">
-              <div class="swiper pb-0" id="instagram-swiper" style="padding-bottom: 0 !important;">
+              <div
+                class="swiper pb-0"
+                id="instagram-swiper"
+                style="padding-bottom: 0 !important"
+              >
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <figure class="effect-bubba">
@@ -538,77 +598,83 @@
                     </figure>
                   </div>
 
-                  <div class="swiper-slide"><figure class="effect-bubba">
-                    <a
-                      href="https://www.instagram.com/joleneprins.com_blog/"
-                      target="_blank"
-                      class="overlay-button"
-                      title="#joleneprins.com_blog"
-                    ></a
-                    ><img
-                      class="nolazyload nopin"
-                      src="img/insta/404112049_17886908663950503_3574463652215956419_n.jpg"
-                      alt="#joleneprins.com_blog"
-                      width="640"
-                      height="640"
-                    />
-                    <figcaption>
-                      <p class="icon-links">
-                        <span class="icon-instagram">
-                          <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                        ></span>
-                      </p>
-                      <p class="description">#joleneprins.com_blog</p>
-                    </figcaption>
-                  </figure></div>
+                  <div class="swiper-slide">
+                    <figure class="effect-bubba">
+                      <a
+                        href="https://www.instagram.com/joleneprins.com_blog/"
+                        target="_blank"
+                        class="overlay-button"
+                        title="#joleneprins.com_blog"
+                      ></a
+                      ><img
+                        class="nolazyload nopin"
+                        src="img/insta/404112049_17886908663950503_3574463652215956419_n.jpg"
+                        alt="#joleneprins.com_blog"
+                        width="640"
+                        height="640"
+                      />
+                      <figcaption>
+                        <p class="icon-links">
+                          <span class="icon-instagram">
+                            <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                          ></span>
+                        </p>
+                        <p class="description">#joleneprins.com_blog</p>
+                      </figcaption>
+                    </figure>
+                  </div>
 
-                  <div class="swiper-slide"><figure class="effect-bubba">
-                    <a
-                      href="https://www.instagram.com/joleneprins.com_blog/"
-                      target="_blank"
-                      class="overlay-button"
-                      title="#joleneprins.com_blog"
-                    ></a
-                    ><img
-                      class="nolazyload nopin"
-                      src="img/insta/404121591_17886742250950503_6240901218808161879_n.jpg"
-                      alt="#joleneprins.com_blog"
-                      width="640"
-                      height="640"
-                    />
-                    <figcaption>
-                      <p class="icon-links">
-                        <span class="icon-instagram">
-                          <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                        ></span>
-                      </p>
-                      <p class="description">#joleneprins.com_blog</p>
-                    </figcaption>
-                  </figure></div>
+                  <div class="swiper-slide">
+                    <figure class="effect-bubba">
+                      <a
+                        href="https://www.instagram.com/joleneprins.com_blog/"
+                        target="_blank"
+                        class="overlay-button"
+                        title="#joleneprins.com_blog"
+                      ></a
+                      ><img
+                        class="nolazyload nopin"
+                        src="img/insta/404121591_17886742250950503_6240901218808161879_n.jpg"
+                        alt="#joleneprins.com_blog"
+                        width="640"
+                        height="640"
+                      />
+                      <figcaption>
+                        <p class="icon-links">
+                          <span class="icon-instagram">
+                            <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                          ></span>
+                        </p>
+                        <p class="description">#joleneprins.com_blog</p>
+                      </figcaption>
+                    </figure>
+                  </div>
 
-                  <div class="swiper-slide">  <figure class="effect-bubba">
-                    <a
-                      href="https://www.instagram.com/joleneprins.com_blog/"
-                      target="_blank"
-                      class="overlay-button"
-                      title="#joleneprins.com_blog"
-                    ></a
-                    ><img
-                      class="nolazyload nopin"
-                      src="img/insta/399742377_17886629372950503_1225823373204815677_n.jpg"
-                      alt="#joleneprins.com_blog"
-                      width="640"
-                      height="640"
-                    />
-                    <figcaption>
-                      <p class="icon-links">
-                        <span class="icon-instagram">
-                          <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                        ></span>
-                      </p>
-                      <p class="description">#joleneprins.com_blog</p>
-                    </figcaption>
-                  </figure></div>
+                  <div class="swiper-slide">
+                    <figure class="effect-bubba">
+                      <a
+                        href="https://www.instagram.com/joleneprins.com_blog/"
+                        target="_blank"
+                        class="overlay-button"
+                        title="#joleneprins.com_blog"
+                      ></a
+                      ><img
+                        class="nolazyload nopin"
+                        src="img/insta/399742377_17886629372950503_1225823373204815677_n.jpg"
+                        alt="#joleneprins.com_blog"
+                        width="640"
+                        height="640"
+                      />
+                      <figcaption>
+                        <p class="icon-links">
+                          <span class="icon-instagram">
+                            <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                          ></span>
+                        </p>
+                        <p class="description">#joleneprins.com_blog</p>
+                      </figcaption>
+                    </figure>
+                  </div>
 
                   <div class="swiper-slide">
                     <figure class="effect-bubba">
@@ -633,57 +699,62 @@
                         </p>
                         <p class="description">#joleneprins.com_blog</p>
                       </figcaption>
-                    </figure></div>
+                    </figure>
+                  </div>
 
-                  <div class="swiper-slide">   <figure class="effect-bubba">
-                    <a
-                      href="https://www.instagram.com/joleneprins.com_blog/"
-                      target="_blank"
-                      class="overlay-button"
-                      title="#joleneprins.com_blog"
-                    ></a
-                    ><img
-                      class="nolazyload nopin"
-                      src="img/insta/401506182_17885998619950503_1883784223618503641_n.jpg"
-                      alt="#joleneprins.com_blog"
-                      width="640"
-                      height="640"
-                    />
-                    <figcaption>
-                      <p class="icon-links">
-                        <span class="icon-instagram">
-                          <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                        ></span>
-                      </p>
-                      <p class="description">#joleneprins.com_blog</p>
-                    </figcaption>
-                  </figure></div>
+                  <div class="swiper-slide">
+                    <figure class="effect-bubba">
+                      <a
+                        href="https://www.instagram.com/joleneprins.com_blog/"
+                        target="_blank"
+                        class="overlay-button"
+                        title="#joleneprins.com_blog"
+                      ></a
+                      ><img
+                        class="nolazyload nopin"
+                        src="img/insta/401506182_17885998619950503_1883784223618503641_n.jpg"
+                        alt="#joleneprins.com_blog"
+                        width="640"
+                        height="640"
+                      />
+                      <figcaption>
+                        <p class="icon-links">
+                          <span class="icon-instagram">
+                            <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                          ></span>
+                        </p>
+                        <p class="description">#joleneprins.com_blog</p>
+                      </figcaption>
+                    </figure>
+                  </div>
 
-                  <div class="swiper-slide"> <figure class="effect-bubba">
-                    <a
-                      href="https://www.instagram.com/joleneprins.com_blog/"
-                      target="_blank"
-                      class="overlay-button"
-                      title="#joleneprins.com_blog"
-                    ></a
-                    ><img
-                      class="nolazyload nopin"
-                      src="img/insta/400864790_17885869892950503_8486895227918863320_n.jpg"
-                      alt="#joleneprins.com_blog"
-                      width="640"
-                      height="640"
-                    />
-                    <figcaption>
-                      <p class="icon-links">
-                        <span class="icon-instagram">
-                          <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                        ></span>
-                      </p>
-                      <p class="description">#joleneprins.com_blog</p>
-                    </figcaption>
-                  </figure></div>
-                  
-                  <div class="swiper-slide"> 
+                  <div class="swiper-slide">
+                    <figure class="effect-bubba">
+                      <a
+                        href="https://www.instagram.com/joleneprins.com_blog/"
+                        target="_blank"
+                        class="overlay-button"
+                        title="#joleneprins.com_blog"
+                      ></a
+                      ><img
+                        class="nolazyload nopin"
+                        src="img/insta/400864790_17885869892950503_8486895227918863320_n.jpg"
+                        alt="#joleneprins.com_blog"
+                        width="640"
+                        height="640"
+                      />
+                      <figcaption>
+                        <p class="icon-links">
+                          <span class="icon-instagram">
+                            <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                          ></span>
+                        </p>
+                        <p class="description">#joleneprins.com_blog</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
                     <figure class="effect-bubba">
                       <a
                         href="https://www.instagram.com/joleneprins.com_blog/"
@@ -706,9 +777,10 @@
                         </p>
                         <p class="description">#joleneprins.com_blog</p>
                       </figcaption>
-                    </figure></div>
-                  
-                  <div class="swiper-slide">    
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
                     <figure class="effect-bubba">
                       <a
                         href="https://www.instagram.com/joleneprins.com_blog/"
@@ -731,27 +803,30 @@
                         </p>
                         <p class="description">#joleneprins.com_blog</p>
                       </figcaption>
-                    </figure></div>
-                  
-                  <div class="swiper-slide">   <figure class="effect-bubba">
-                    <img
-                      class="nolazyload nopin"
-                      src="img/insta/1.jpg"
-                      alt="#joleneprins.com_blog"
-                      width="640"
-                      height="640"
-                    />
-                    <figcaption>
-                      <p class="icon-links">
-                        <span class="icon-instagram">
-                          <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                        ></span>
-                      </p>
-                      <p class="description">#joleneprins.com_blog</p>
-                    </figcaption>
-                  </figure></div>
-                  
-                  <div class="swiper-slide"> 
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <figure class="effect-bubba">
+                      <img
+                        class="nolazyload nopin"
+                        src="img/insta/1.jpg"
+                        alt="#joleneprins.com_blog"
+                        width="640"
+                        height="640"
+                      />
+                      <figcaption>
+                        <p class="icon-links">
+                          <span class="icon-instagram">
+                            <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                          ></span>
+                        </p>
+                        <p class="description">#joleneprins.com_blog</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
                     <figure class="effect-bubba">
                       <a
                         href="https://www.instagram.com/joleneprins.com_blog/"
@@ -774,53 +849,36 @@
                         </p>
                         <p class="description">#joleneprins.com_blog</p>
                       </figcaption>
-                    </figure></div>
-                  
-                  <div class="swiper-slide"><figure class="effect-bubba">
-                    <a
-                      href="https://www.instagram.com/joleneprins.com_blog/"
-                      target="_blank"
-                      class="overlay-button"
-                      title="#joleneprins.com_blog"
-                    ></a
-                    ><img
-                      class="nolazyload nopin"
-                      src="img/insta/3.jpg"
-                      alt="#joleneprins.com_blog"
-                      width="640"
-                      height="640"
-                    />
-                    <figcaption>
-                      <p class="icon-links">
-                        <span class="icon-instagram">
-                          <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                        ></span>
-                      </p>
-                      <p class="description">#joleneprins.com_blog</p>
-                    </figcaption>
-                  </figure></div>
-                
-                  
-                  
-                  
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <figure class="effect-bubba">
+                      <a
+                        href="https://www.instagram.com/joleneprins.com_blog/"
+                        target="_blank"
+                        class="overlay-button"
+                        title="#joleneprins.com_blog"
+                      ></a
+                      ><img
+                        class="nolazyload nopin"
+                        src="img/insta/3.jpg"
+                        alt="#joleneprins.com_blog"
+                        width="640"
+                        height="640"
+                      />
+                      <figcaption>
+                        <p class="icon-links">
+                          <span class="icon-instagram">
+                            <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                          ></span>
+                        </p>
+                        <p class="description">#joleneprins.com_blog</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
-              
-
-              
-
-              
-
-            
-
-
-           
-
-        
-
-          
-              
-            
             </div>
           </div>
         </div>
@@ -838,7 +896,7 @@
       />
       <div class="d-flex gap-4" id="footer-nav">
         <a href="mystory.html" class="text-decoration-none text-light"
-          >My Story</a
+          >My story</a
         >
         <a href="blog.html" class="text-decoration-none text-light">Blogs</a>
         <a href="gallery.html" class="text-decoration-none text-light"
@@ -928,9 +986,10 @@
 
       const swiper = new Swiper("#latest-blog", {
         direction: "horizontal",
-        loop: true,
-        spaceBetween: 10,
-        // centeredSlides: true,
+        // loop: true,
+        spaceBetween: 20,
+        initialSlide: 1,
+        centeredSlides: true,
         breakpoints: {
           0: {
             slidesPerView: 1,
@@ -939,7 +998,7 @@
             slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 3.5,
+            slidesPerView: 3.7,
           },
         },
 
@@ -954,13 +1013,13 @@
         },
       });
 
-      new Swiper("#instagram-swiper", {
+      const instaslider = new Swiper("#instagram-swiper", {
         direction: "horizontal",
         loop: true,
-        speed: 1200,
+        speed: 5000,
         autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
+          delay: 0,
+          disableOnInteraction: false,
         },
         spaceBetween: 0,
         // slidesPerView: 6,
@@ -975,13 +1034,76 @@
             slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 6,
+            slidesPerView: 4,
           },
         },
-      })
+      });
+
+      //       instaslider.on('slideChange', function() {
+      //   console.log(swiper.realIndex);
+      // });
 
       let vid = document.querySelector("header video");
       vid.playbackRate = 0.5;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
+    <script>
+      // Select all text elements with the class "unblur-text"
+      const textElements = document.querySelectorAll(".unblur-text");
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to(".quote-patch-1", {
+        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
+        x: "100%",
+        duration: 100,
+        scrollTrigger: {
+          trigger: "#swiper-latest-blog-parent",
+          start: "top start",
+          // end: "center 100px",
+          scrub: true,
+          markers: true,
+        },
+      });
+      gsap.to(".quote-patch-2", {
+        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
+        x: "100%",
+        duration: 60,
+        scrollTrigger: {
+          trigger: "#swiper-latest-blog-parent",
+          start: "bottom top",
+          // end: "center 100px",
+          scrub: true,
+          // markers: true,
+        },
+      });
+      gsap.to(".quote-patch-3", {
+        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
+        x: "100%",
+        duration: 60,
+        scrollTrigger: {
+          trigger: "#swiper-latest-blog-parent",
+          start: "80%",
+          // end: "center 100px",
+          scrub: true,
+          // markers: true,
+        },
+      });
+      gsap.to(".quote-patch-4", {
+        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
+        x: "100%",
+        duration: 60,
+        scrollTrigger: {
+          trigger: "#swiper-latest-blog-parent",
+          start: "90%",
+          // end: "center 100px",
+          scrub: true,
+          // markers: true,
+        },
+      });
     </script>
   </body>
 </html>

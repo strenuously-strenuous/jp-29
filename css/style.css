@@ -14,13 +14,13 @@
   --tertiary:; */
 }
 
-* {
+/* * {
   -webkit-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
-}
+} */
 body {
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Open sans", serif;
   /* font-weight: 300 !important; */
 }
 
@@ -632,7 +632,8 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 }
 
 #instagram-swiper figure {
-  width: 317px;
+  /* width: 300px; */
+  width: 100%;
   aspect-ratio: 1/1;
 }
 
@@ -647,10 +648,32 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
   transform: translateX(-50%);
   background: #fff;
 }
-#swiper-latest-blog-parent {
+
+/* #swiper-latest-blog-parent {
   padding-left: 15%;
-}
+} */
 
 #mystory-header-img {
   object-position: center -109px !important;
+}
+
+#swiper-latest-blog-parent .swiper-slide-active {
+  transform: scale(1.2) !important;
+  transition: all 0.5s;
+  margin-inline: 30px;
+  margin-right: 50px !important;
+  /* box-shadow: 2px 4px 5px #ccc; */
+  z-index: 9999;
+}
+
+#main-article p {
+  font-size: 18px;
+}
+
+#latest-blog {
+  padding-bottom: 180px !important;
+}
+
+#instagram-swiper .swiper-wrapper {
+  transition-timing-function: linear;
 }
