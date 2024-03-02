@@ -53,7 +53,7 @@
 
     <script src="js/script.js" defer></script>
   </head>
-  <body>
+  <body class="font-bodoni">
     <header class="position-relative mw-100 d-flex flex-column">
       <nav
         class="navbar navbar-expand-lg z-3 start-0 end-0 top-0"
@@ -165,7 +165,7 @@
       <main class="row">
         <div class="col-12 col-lg-8 pe-lg-5">
           <section class="text-center blog-h-common py-5">
-            <h1 class="mt-5 display-6 fw-medium">HORN PLEASE!</h1>
+            <h1 class="mt-5 display-4 fw-medium">Horn please!</h1>
             <div class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center">
               <span class="post_info_date span position-relative">21st November 2023</span>
             </div>
@@ -190,7 +190,7 @@
                 shoulder of the road. Neither herder nor herd seem bothered by the
                 traffic rushing past them and regard the highway as theirs alone.
               </p>
-              <h5 class="mt-5 mb-3">Heroism at the slowest speed</h5>
+              <h5 class="mt-5 mb-3 fs-4 fw-bold">Heroism at the slowest speed</h5>
     
               <p>
                 Not much later, a hay bale on four wheels passes by, with the
@@ -211,7 +211,7 @@
                 alive.
               </p>
               <blockquote
-                class="my-4 bg-white border-start border-2 p-4 fs-5"
+                class="my-4 border-start border-2 p-4 fs-5 fw-bold"
               >
                 A truck passes by whose driver wears a makeshift turban and has his
                 door wide open, probably because his air conditioning isn’t working.
@@ -332,7 +332,7 @@
             
     
             <div class="container mt-5">
-              <div class="d-flex align-items-center justify-content-between">
+              <!-- <div class="d-flex align-items-center justify-content-between">
                 <div class="">
                   <div class="">
                     <a href="#" class="text-decoration-none text-dark text-uppercase small text-body-secondary"
@@ -349,29 +349,9 @@
                     </div>
                     <p class="fw-medium fs-5 mt-4 text-end">Finding the “care” in “healthcare”                </p>
                 </div>
-            </div>
+            </div> -->
           
-            <div class="blog-comments my-5 pb-5">
-              <h3 class="mb-5">Leave a comment</h3>
-              <form action="">
-                <div class="row mb-4">
-                  <div class="col">
-                    <input type="text" class=" form-control border-0 border-bottom border-1 border-dark-subtle bg-transparent rounded-0" name="name" placeholder="Your Name*" id="">
-                  </div>
-                  <div class="col">
-                    <input type="Email" class="form-control border-0 border-bottom border-1 border-dark-subtle bg-transparent rounded-0" name="email" placeholder="Your Email*" id="">
-                  </div>
-                </div>
-                <textarea name="comment" class="form-control border-0 border-bottom border-1 border-dark-subtle bg-transparent rounded-0 mt-5 mb-4" id="" cols="30" rows="5" placeholder="Your Comment*"></textarea>
-    
-                <div class="form-check">
-                  <input type="checkbox" name="" id="" class="form-check-input">
-                  I agree that my submitted data is being collected and stored. *
-                </div>
-                <button class="btn mt-5 blog-form-submit px-4" type="submit">SUBMIT</button>
-    
-              </form>
-            </div>
+            
           </section>
         </div>
         <div class="col-12 col-lg-4 py-5 mt-5">
@@ -398,14 +378,13 @@
                 </div> -->
                 
               </div>
-              <div class="mt-4 text-body">
+              <div class="mt-4 text-body font-bodoni">
                 
                 I've always loved to write. In my professional 
                 capacity, I engage in creating content for annual
                 
                 <div class="collapse mt-0" id="about-author-expand">
-                  reports, websites, 
-                  corporate videos, and internal magazines for corporate entities, 
+                  reports, websites, corporate videos, and internal magazines for corporate entities, 
                   but my true passion is to write about topics that occupy me in everyday life.
                   As Managing Director of a leadership-communication agency in India, 
                   I am privileged to lead an exceptional team that is inspiring and 
@@ -414,8 +393,8 @@
                   few ex-pats; I share many of my experiences and personal thoughts on 
                   my blogs that are hopefully helpful to many others.
                 </div>
-                <a data-bs-toggle="collapse" class="card-link small"
-                data-bs-target="#about-author-expand">Read more</a>
+                <a data-bs-toggle="collapse" href="#about-author-expand" class="card-link small "
+                >Read more</a>
               </div>
             </div>
 
@@ -462,8 +441,8 @@
 
     <div class="container">
       <div class="blogs-related-blogs my-5">
-        <h3 class="my-5">
-          You May Also Like
+        <h3 class="my-5 text-center fw-bolder">
+          You may also like
         </h3>
   
         <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 gy-5" id="pg-blog-wrapper">
@@ -544,6 +523,33 @@
 
         
         </div>
+      </div>
+
+      <div class="blog-comments my-5 pb-5">
+        <h3 class="mb-5 text-center fw-bolder">Leave a comment</h3>
+        <form action="">
+          <div class="row mb-4">
+            <div class="col">
+              <label for="">Your Name*</label>
+              <input type="text" class="mt-2 form-control py-3 border-bottom border-1 border-dark-subtle bg-transparent rounded-0" name="name" 
+              id="">
+            </div>
+            <div class="col">
+              <label for="">Your Email*</label>
+              <input type="Email" class=" mt-2 form-control py-3 border-bottom border-1 border-dark-subtle bg-transparent rounded-0" name="email"  id="">
+            </div>
+          </div>
+          <label for="" class="mt-4">Your Comment*</label>
+          <textarea name="comment" class="mt-2 form-control py-3 border-bottom border-1 border-dark-subtle bg-transparent rounded-0  mb-4" id="" 
+          cols="30" rows="5"></textarea>
+<!--           
+          <div class="form-check">
+            <input type="checkbox" name="" id="" class="form-check-input">
+            I agree that my submitted data is being collected and stored. *
+          </div> -->
+          <button class="btn mt-4 blog-form-submit fw-bolder py-3 px-5" type="submit">Submit</button>
+
+        </form>
       </div>
     </div>
 
@@ -667,6 +673,7 @@
         font-size: 4em;
         line-height: 0.1em;
         padding-top: 40px;
+        margin-bottom: 20px;
         display: block;
       }
 
@@ -679,6 +686,11 @@
         transform: translateY(-6px);
         background-color: var(--hightlight-secondary);
       }
+
+      body {
+        font-size: 18px;
+      }
+      
     </style>
     <script>
       var swiperFirst = new Swiper("#blog-h-slider", {});
