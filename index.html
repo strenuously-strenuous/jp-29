@@ -120,7 +120,7 @@
                   class="nav-link fw-bold"
                   aria-current="page"
                   href="mystory.html"
-                  >My Story</a
+                  >My story</a
                 >
               </li>
               <!-- <li class="nav-item">
@@ -896,7 +896,7 @@
       />
       <div class="d-flex gap-4" id="footer-nav">
         <a href="mystory.html" class="text-decoration-none text-light"
-          >My Story</a
+          >My story</a
         >
         <a href="blog.html" class="text-decoration-none text-light">Blogs</a>
         <a href="gallery.html" class="text-decoration-none text-light"
@@ -1016,9 +1016,9 @@
       const instaslider = new Swiper("#instagram-swiper", {
         direction: "horizontal",
         loop: true,
-        speed: 1200,
+        speed: 5000,
         autoplay: {
-          delay: 1000,
+          delay: 0,
           disableOnInteraction: false,
         },
         spaceBetween: 0,
@@ -1059,10 +1059,10 @@
       gsap.to(".quote-patch-1", {
         scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
         x: "100%",
-        duration: 10,
+        duration: 100,
         scrollTrigger: {
           trigger: "#swiper-latest-blog-parent",
-          start: "100%",
+          start: "top start",
           // end: "center 100px",
           scrub: true,
           markers: true,
@@ -1074,7 +1074,7 @@
         duration: 60,
         scrollTrigger: {
           trigger: "#swiper-latest-blog-parent",
-          start: "60%",
+          start: "bottom top",
           // end: "center 100px",
           scrub: true,
           // markers: true,

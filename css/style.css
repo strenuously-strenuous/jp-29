@@ -673,3 +673,7 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 #latest-blog {
   padding-bottom: 180px !important;
 }
+
+#instagram-swiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
