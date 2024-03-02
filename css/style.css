@@ -1,5 +1,27 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap'); */
-@import url("../fonts/bodoni/Bodoni\ Regular.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("../fonts/bodoni/Bodoni/Bodoni Bold.ttf");
+
+@font-face {
+  font-family: Bodoni;
+  src: url("../fonts/bodoni/Bodoni-Regular.ttf") format('ttf');
+}
+@font-face {
+  font-family: Bodoni;
+  src: url("../fonts/bodoni/Bodoni-Bold.ttf") format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Bodoni;
+  src: url("../fonts/bodoni/bodoni-bold-bt.ttf") format('ttf');
+  font-weight: 500;
+}
+
+/* @font-face {
+  font-family: Bodoni;
+  src: url("../fonts/bodoni/bodoni\ bold\ bt.ttf");
+  font-weight: 500;
+}  */
 
 :root {
   --light-grey: #e6e8ea;
@@ -9,9 +31,6 @@
   --hightlight-secondary: #f5efeb;
   --white: #fff;
   --bs-heading-color: var(--black);
-  /* --primiary:;
-  --secondary:;
-  --tertiary:; */
 }
 
 /* * {
@@ -22,6 +41,7 @@
 body {
   font-family: "Open sans", serif;
   /* font-weight: 300 !important; */
+  /* color: var(--black) */
 }
 
 h1,
@@ -30,7 +50,7 @@ h3,
 h4,
 h5,
 h6,
-.font-bodoni {
+.font-bodoni, header nav {
   font-family: "Bodoni", serif !important;
 }
 
@@ -409,8 +429,8 @@ blockquote {
 
 .readmore {
   font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 900;
+  /* text-transform: uppercase; */
   display: inline-block;
   letter-spacing: 2px;
   color: var(--hightlight);
@@ -429,13 +449,14 @@ blockquote {
   z-index: 2;
   font-size: 13px;
   font-style: italic;
+  font-weight: 900;
 }
 
 .pg-blog-item span::before {
   content: "";
   background: var(--hightlight);
   width: 35px;
-  height: 0.8px;
+  height: 2px;
   position: absolute;
   right: 120%;
   top: 50%;
@@ -445,7 +466,7 @@ blockquote {
   content: "";
   background: var(--hightlight);
   width: 35px;
-  height: 0.8px;
+  height: 2px;
   position: absolute;
   left: 120%;
   top: 50%;
@@ -676,4 +697,24 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 
 #instagram-swiper .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.f-18 {
+  font-size: 18px !important;
+}
+
+.divider-blog-parent {
+  margin-block: 100px;
+  min-height: 100px;
+}
+
+.divider-blog-text {
+  /* font-size: 45px; */
+  padding-inline: 16px;
+  color: var(--black)
+}
+
+.blog-divider-line {
+  height: 2px;
+  background: var(--hightlight);
 }
