@@ -126,7 +126,7 @@
               <!-- <li class="nav-item">
                 <a class="nav-link  fw-bold" href="#">Blogs</a>
               </li> -->
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ms-2">
                 <a
                   class="nav-link dropdown-toggle fw-bold"
                   href="#"
@@ -165,7 +165,9 @@
                 <a class="nav-link fw-bold" href="contact.html">Contact</a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <ul class="list-unstyled d-flex gap-4 align-items-center">
+                <ul
+                  class="list-unstyled d-flex gap-4 align-items-center ms-2 ms-md-auto"
+                >
                   <!-- <li>
                     <a href="https://www.instagram.com/joleneprins.com_blog/"
                       ><i class="fa-brands fa-instagram fw-bold"></i
@@ -993,6 +995,9 @@
             slidesPerView: 1,
           },
           640: {
+            slidesPerView: 1,
+          },
+          768: {
             slidesPerView: 2,
           },
           1024: {
@@ -1017,7 +1022,8 @@
         speed: 6000,
         autoplay: {
           delay: 0,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         },
         spaceBetween: 0,
         // slidesPerView: 6,
