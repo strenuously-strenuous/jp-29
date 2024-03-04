@@ -1,27 +1,28 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url("../fonts/bodoni/Bodoni/Bodoni Bold.ttf");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* @import url("../fonts/bodoni/Bodoni/Bodoni Bold.ttf"); */
 
 @font-face {
   font-family: Bodoni;
-  src: url("../fonts/bodoni/Bodoni-Regular.ttf") format('ttf');
+  src: url("../fonts/bodoni/Bodoni-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: Bodoni;
-  src: url("../fonts/bodoni/Bodoni-Bold.ttf") format('ttf');
-  font-weight: bold;
+  src: url("../fonts/bodoni/Bodoni-Bold.ttf") format("ttf");
+  /* src: url("../fonts/bodoni/BODONI-N.TTF") format("ttf"); */
+  font-weight: 500;
 }
 @font-face {
   font-family: Bodoni;
-  src: url("../fonts/bodoni/bodoni-bold-bt.ttf") format('ttf');
+  src: url("../fonts/bodoni/bodoni-bold-bt.ttf") format("ttf");
   font-weight: 500;
 }
 
-/* @font-face {
+@font-face {
   font-family: Bodoni;
   src: url("../fonts/bodoni/bodoni\ bold\ bt.ttf");
   font-weight: 500;
-}  */
+}
 
 :root {
   --light-grey: #e6e8ea;
@@ -31,6 +32,10 @@
   --hightlight-secondary: #f5efeb;
   --white: #fff;
   --bs-heading-color: var(--black);
+
+  --other-hightlighter: #cda193;
+
+  --bs-font-sans-serif: "Open Sans", sans-serif;
 }
 
 /* * {
@@ -40,8 +45,8 @@
 } */
 body {
   font-family: "Open sans", serif;
-  /* font-weight: 300 !important; */
-  /* color: var(--black) */
+  font-weight: 500;
+  color: var(--black) !important;
 }
 
 h1,
@@ -50,7 +55,8 @@ h3,
 h4,
 h5,
 h6,
-.font-bodoni, header nav {
+.font-bodoni,
+header nav {
   font-family: "Bodoni", serif !important;
 }
 
@@ -245,11 +251,6 @@ footer a i {
   }
 }
 
-nav a:hover {
-  opacity: 0.8;
-  text-decoration: underline !important;
-  /* color: var(--black) !important */
-}
 nav a {
   color: white !important;
 }
@@ -331,13 +332,13 @@ header > video {
 }
 
 #bc-banner-blog {
-  background-image: url(../img/Jolene-Prins-Hero-blog.webp);
+  background-image: url(../img/croped-temp.jpg);
   background-position: center;
   padding: 200px 0;
 }
 #bc-banner-blog-btws {
   /* background-image: url(../img/3.jpg); */
-  background-image: url(../img/banner-btws.webp);
+  background-image: url(../img/extend\ background\ 2.png);
   background-position: center;
   padding: 200px 0;
 }
@@ -429,7 +430,7 @@ blockquote {
 
 .readmore {
   font-size: 11px;
-  font-weight: 900;
+  font-weight: 700;
   /* text-transform: uppercase; */
   display: inline-block;
   letter-spacing: 2px;
@@ -449,7 +450,7 @@ blockquote {
   z-index: 2;
   font-size: 13px;
   font-style: italic;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .pg-blog-item span::before {
@@ -677,22 +678,23 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 #mystory-header-img {
   object-position: center -109px !important;
 }
-
-#swiper-latest-blog-parent .swiper-slide-active {
-  transform: scale(1.2) !important;
-  transition: all 0.5s;
-  margin-inline: 30px;
-  margin-right: 50px !important;
-  /* box-shadow: 2px 4px 5px #ccc; */
-  z-index: 9999;
+@media (min-width: 768px) {
+  #swiper-latest-blog-parent .swiper-slide-active {
+    transform: scale(1.2) !important;
+    transition: all 0.5s;
+    margin-inline: 30px;
+    margin-right: 50px !important;
+    z-index: 9999;
+  }
 }
 
-#main-article p {
+#main-article p, article p {
   font-size: 18px;
 }
 
 #latest-blog {
-  padding-bottom: 180px !important;
+  padding-bottom: 215px !important;
+  /* padding-bottom: 133px !important; */
 }
 
 #instagram-swiper .swiper-wrapper {
@@ -711,10 +713,131 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
 .divider-blog-text {
   /* font-size: 45px; */
   padding-inline: 16px;
-  color: var(--black)
+  color: var(--black);
 }
 
 .blog-divider-line {
   height: 2px;
   background: var(--hightlight);
+}
+
+/* nav link underline css */
+.nav-link:not(.dropdown-toggle),
+#footer-nav a {
+  padding-inline: 0 !important;
+  margin-inline: 8px;
+}
+
+nav .dropdown-menu {
+  padding-inline: 16px;
+  padding-block: 18px;
+}
+header nav .dropdown-item {
+  padding-inline: 0 !important;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header nav .dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+.nav-link:not(.dropdown-toggle),
+.dropdown-item,
+#footer-nav a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link:not(.dropdown-toggle)::before,
+.nav-link:not(.dropdown-toggle)::after,
+.dropdown-item::before,
+.dropdown-item::after,
+#footer-nav a::before,
+#footer-nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.nav-link:not(.dropdown-toggle)::before,
+.dropdown-item::before,
+#footer-nav a::before {
+  background-color: white;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.nav-link:not(.dropdown-toggle)::after,
+.dropdown-item::after,
+#footer-nav a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  color: white;
+}
+
+.nav-link:not(.dropdown-toggle):hover::before,
+.dropdown-item:hover::before,
+#footer-nav a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.nav-link:not(.dropdown-toggle):hover::after,
+.dropdown-item:hover::after,
+#footer-nav a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Presentational Styles */
+
+.nav-link:not(.dropdown-toggle),
+.dropdown-item,
+#footer-social > ul a {
+  /* text-decoration: none; */
+  /* color: #18272f;
+  font-weight: 700; */
+  vertical-align: top;
+}
+/* nav link underline css */
+
+.main-nav-js {
+  z-index: 9999;
+}
+
+footer a > i {
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1/1;
+}
+
+#footer-social > ul a {
+  width: 55.2px !important;
+  height: 55.2px !important;
+  display: inline-block;
+}
+
+div#swiper-latest-blog-parent {
+  margin-bottom: -80px;
+}
+
+#first-letter-custom {
+  color: var(--black);
+  font-size: 87px;
+  height: 55px;
+  line-height: 62px;
+  margin: 0;
+  text-align: left;
+  width: auto !important;
+  min-width: 60px;
+  padding-right: 5px;
+  text-indent: 3px;
+  overflow: visible;
+  font-family: "Puppies Play", cursive;
 }

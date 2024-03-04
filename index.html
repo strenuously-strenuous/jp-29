@@ -95,7 +95,7 @@
         class="overlay-video-wrapper w-100 h-100 position-absolute top-0 start-0 end-0 bottom-0"
       ></div>
       <nav
-        class="main-nav-js navbar navbar-expand-lg z-3 start-0 end-0 top-0 font-bodoni"
+        class="main-nav-js navbar navbar-expand-lg start-0 end-0 top-0 font-bodoni"
         data-bs-theme="dark"
       >
         <div class="container">
@@ -126,7 +126,7 @@
               <!-- <li class="nav-item">
                 <a class="nav-link  fw-bold" href="#">Blogs</a>
               </li> -->
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ms-2">
                 <a
                   class="nav-link dropdown-toggle fw-bold"
                   href="#"
@@ -165,7 +165,9 @@
                 <a class="nav-link fw-bold" href="contact.html">Contact</a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <ul class="list-unstyled d-flex gap-4 align-items-center">
+                <ul
+                  class="list-unstyled d-flex gap-4 align-items-center ms-2 ms-md-auto"
+                >
                   <!-- <li>
                     <a href="https://www.instagram.com/joleneprins.com_blog/"
                       ><i class="fa-brands fa-instagram fw-bold"></i
@@ -222,7 +224,7 @@
     </header>
 
     <main class="pt-5 mt-5">
-      <section class="container-fluid mb-5 pb-5">
+      <section class="container-fluid">
         <h2 class="text-center display-4 fw-bold mb-5 mt-3">
           Latest from the Blog
         </h2>
@@ -358,7 +360,7 @@
             </div>
 
             <div
-              class="border rounded-circle p-4 border-white text-white border-1 text-dark start-75 translate-middle-x z-3 position-absolute"
+              class="border rounded-circle p-4 border-dark border-1 text-dark start-75 translate-middle-x z-3 position-absolute"
               style="top: 30%; left: 90%"
               id="next-blog"
             >
@@ -370,7 +372,7 @@
                 data-name="Layer 1"
                 viewBox="0 0 24 24"
                 width="30"
-                fill="#ffffff"
+                fill="#000"
               >
                 <path
                   d="m23.542,10.892l-4.717-4.717-.707.707,4.618,4.618H0v1h22.734l-4.617,4.617.707.707,4.718-4.718c.61-.61.61-1.604,0-2.214Z"
@@ -380,8 +382,9 @@
           </div>
         </div>
       </section>
+      <div id="space-divider-100" class="pb-5 my-5"></div>
       <section
-        class="quotes vh-100 position-relative text-center py-5 my-5 d-flex align-items-center justify-content-center flex-column"
+        class="quotes vh-100 position-relative text-center py-5 mb-5 d-flex align-items-center justify-content-center flex-column"
       >
         <div
           class="position-absolute top-0 start-0 bottom-0 end-0 quote-overlay"
@@ -397,17 +400,20 @@
 
           /* Initially blur the text elements */
           .unblur-text {
-            height: 92px;
+            height: 62px;
             background-color: transparent;
             /* background: red; */
             transform-style: preserve-3d;
             will-change: transform;
+            -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
+            /* margin-block: -32px; */
+            /* background-color: red; */
           }
         </style>
 
         <div
-          class="display-5 fw-bold pt-5 mt-5 z-2 text-white position-relative d-inline overflow-hidden"
+          class="display-5 font-bodoni fw-bold z-2 mt-5 text-white position-relative d-inline overflow-hidden"
         >
           "Within the chaos, it’s possible to find a
           <br />
@@ -416,21 +422,15 @@
           need the chaos."
 
           <div class="position-absolute top-0 start-0 end-0 bottom-0 z-3">
-            <div
-              class="unblur-text quote-patch quote-patch-1 w-100"
-              style=""
-            ></div>
-            <div
-              class="unblur-text quote-patch quote-patch-2 w-100"
-              style=""
-            ></div>
+            <div class="unblur-text quote-patch quote-patch-1 w-100"></div>
+            <div class="unblur-text quote-patch quote-patch-2 w-100"></div>
             <div class="unblur-text quote-patch quote-patch-3 w-100"></div>
             <div class="unblur-text quote-patch quote-patch-4 w-100"></div>
           </div>
         </div>
 
         <p
-          class="fw-normal fs-4 mb-5 text-white text-center w-100 d-block mx-auto z-2"
+          class="fw-normal fs-4 mb-5 mt-4 text-white text-center w-100 d-block mx-auto z-2"
         >
           - Jolene Prins -
         </p>
@@ -894,7 +894,7 @@
         src="img/JP-logo_horizontal_white.png"
         alt=""
       />
-      <div class="d-flex gap-4" id="footer-nav">
+      <div class="d-flex gap-4 font-bodoni" id="footer-nav">
         <a href="mystory.html" class="text-decoration-none text-light"
           >My story</a
         >
@@ -995,6 +995,9 @@
             slidesPerView: 1,
           },
           640: {
+            slidesPerView: 1,
+          },
+          768: {
             slidesPerView: 2,
           },
           1024: {
@@ -1019,7 +1022,8 @@
         speed: 6000,
         autoplay: {
           delay: 0,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         },
         spaceBetween: 0,
         // slidesPerView: 6,
@@ -1057,51 +1061,40 @@
       gsap.registerPlugin(ScrollTrigger);
 
       gsap.to(".quote-patch-1", {
-        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
         x: "100%",
-        duration: 100,
         scrollTrigger: {
-          trigger: "#swiper-latest-blog-parent",
-          start: "top start",
-          // end: "center 100px",
+          trigger: "#space-divider-100",
+          start: "top 30%",
+          end: "+1",
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       });
       gsap.to(".quote-patch-2", {
-        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
         x: "100%",
-        duration: 60,
         scrollTrigger: {
-          trigger: "#swiper-latest-blog-parent",
-          start: "bottom top",
-          // end: "center 100px",
+          trigger: "#space-divider-100",
+          start: "top 26%",
+          end: "+40",
           scrub: true,
-          // markers: true,
         },
       });
       gsap.to(".quote-patch-3", {
-        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
         x: "100%",
-        duration: 60,
         scrollTrigger: {
-          trigger: "#swiper-latest-blog-parent",
-          start: "80%",
-          // end: "center 100px",
+          trigger: "#space-divider-100",
+          start: "top 18%",
+          end: "+10",
           scrub: true,
-          // markers: true,
         },
       });
       gsap.to(".quote-patch-4", {
-        scrollTrigger: ".quotes", // start animation when ".box" enters the viewport
         x: "100%",
-        duration: 60,
         scrollTrigger: {
-          trigger: "#swiper-latest-blog-parent",
-          start: "90%",
-          // end: "center 100px",
+          trigger: "#space-divider-100",
+          start: "top 15%",
+          end: "+10",
           scrub: true,
-          // markers: true,
         },
       });
     </script>
