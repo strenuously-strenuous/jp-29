@@ -3,8 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jolene Prins</title>
-    <base href="/">
+    <title>Horn please! - Beyond the Saree | Jolene Prins</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon -->
+
+    <base href="/" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,9 +52,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -56,7 +90,7 @@
   <body>
     <header class="position-relative mw-100 d-flex flex-column">
       <nav
-        class="navbar navbar-expand-lg z-3 start-0 end-0 top-0"
+        class="main-nav-js navbar navbar-expand-lg start-0 end-0 top-0 font-bodoni"
         data-bs-theme="dark"
       >
         <div class="container">
@@ -77,14 +111,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fw-bold" aria-current="page" href="mystory.html"
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="mystory.html"
                   >My story</a
                 >
               </li>
               <!-- <li class="nav-item">
-            <a class="nav-link  fw-bold" href="#">Blogs</a>
-          </li> -->
-              <li class="nav-item dropdown">
+              <a class="nav-link  fw-bold" href="#">Blogs</a>
+            </li> -->
+              <li class="nav-item dropdown ms-2">
                 <a
                   class="nav-link dropdown-toggle fw-bold"
                   href="#"
@@ -96,17 +133,24 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                  <a class="dropdown-item" href="beyond-the-saree.html">Beyond the Saree</a>
+                    <a class="dropdown-item" href="beyond-the-saree.html"
+                      >Beyond the Saree</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="beyond-the-wooden-shoes.html"
                       >Beyond wooden shoes</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="beyond-the-wooden-shoes.html"
+                      >Getting more things done</a
+                    >
+                  </li>
                   <!-- <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li> -->
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
                 </ul>
               </li>
               <li class="nav-item">
@@ -116,19 +160,21 @@
                 <a class="nav-link fw-bold" href="contact.html">Contact</a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <ul class="list-unstyled d-flex gap-4 align-items-center">
+                <ul
+                  class="list-unstyled d-flex gap-4 align-items-center ms-2 ms-md-auto"
+                >
                   <!-- <li>
-                    <a href="https://www.instagram.com/joleneprins.com_blog/"
-                      ><i class="fa-brands fa-instagram fw-bold"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/jolene-prins-05311280/"
-                      class=""
-                      ><i class="fa-brands fa-linkedin fw-bold"></i
-                    ></a>
-                  </li> -->
+                  <a href="https://www.instagram.com/joleneprins.com_blog/"
+                    ><i class="fa-brands fa-instagram fw-bold"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jolene-prins-05311280/"
+                    class=""
+                    ><i class="fa-brands fa-linkedin fw-bold"></i
+                  ></a>
+                </li> -->
                   <li>
                     <a href="#" class="flag-country d-flex">
                       <img src="img/uk flag.jpg" alt="" />
@@ -143,10 +189,10 @@
                     </a>
                   </li>
                   <!-- <li>
-                <a href="#"
-                  ><i class="fa-brands fa-x-twitter  fw-bold"></i
-                ></a>
-              </li> -->
+                  <a href="#"
+                    ><i class="fa-brands fa-x-twitter  fw-bold"></i
+                  ></a>
+                </li> -->
                 </ul>
               </li>
             </ul>
@@ -156,42 +202,48 @@
     </header>
     <section>
       <img
-      class="img-fluid stretched-link-img object-fit-cover w-100 h-100"
-      src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/12/For-website.jpg?fit=1222%2C510&#038;ssl=1"
-      alt=""
-    />
+        class="img-fluid stretched-link-img object-fit-cover w-100 h-100"
+        src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/12/For-website.jpg?fit=1222%2C510&#038;ssl=1"
+        alt=""
+      />
     </section>
     <div class="container">
       <main class="row">
         <div class="col-12 col-lg-8 pe-lg-5">
           <section class="text-center blog-h-common py-5">
-            <h1 class="mt-5 display-6 fw-medium">HORN PLEASE!</h1>
-            <div class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center">
-              <span class="post_info_date span position-relative">21st November 2023</span>
+            <h1 class="mt-5 display-6 fw-medium">Horn please!</h1>
+            <div
+              class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center"
+            >
+              <span class="post_info_date span position-relative"
+                >21st November 2023</span
+              >
             </div>
           </section>
           <div id="main-article">
             <article class="">
               <p>
-                My daughter and I are driving up the Delhi-Jaipur expressway from
-                Delhi towards Himachal Pradesh. It’s a fourteen hour drive, but we
-                crave fresh air, so we go for it.
+                <span id="first-letter-custom">M</span>
+                y daughter and I are driving up the Delhi-Jaipur expressway from
+                Delhi towards Himachal Pradesh. It’s a fourteen hour drive, but
+                we crave fresh air, so we go for it.
               </p>
               <p>
-                The weather is pleasant for this time of the year, around 27 degrees
-                Celsius, but thanks to the heavy air pollution that extends far
-                beyond the capital, we had to lock ourselves in the car with our N99
-                masks on and windows closed tight like astronauts preparing for
-                their first mission to Mars.
+                The weather is pleasant for this time of the year, around 27
+                degrees Celsius, but thanks to the heavy air pollution that
+                extends far beyond the capital, we had to lock ourselves in the
+                car with our N99 masks on and windows closed tight like
+                astronauts preparing for their first mission to Mars.
               </p>
               <p>
                 Almost immediately after our launch, we encounter a moving
                 roadblock: a goatherd nonchalantly guiding his herd along the
-                shoulder of the road. Neither herder nor herd seem bothered by the
-                traffic rushing past them and regard the highway as theirs alone.
+                shoulder of the road. Neither herder nor herd seem bothered by
+                the traffic rushing past them and regard the highway as theirs
+                alone.
               </p>
-              <h5 class="mt-5 mb-3">Heroism at the slowest speed</h5>
-    
+              <h4 class="mt-5 mb-3 fw-bold">Heroism at the slowest speed</h4>
+
               <p>
                 Not much later, a hay bale on four wheels passes by, with the
                 rickshaw doing the work completely obfuscated. Indians have an
@@ -201,107 +253,114 @@
             </article>
             <article>
               <p>
-                Although a speed-limit sign reads 100 km/h, we drive no faster than
-                80 km/h, and even that feels heroically fast, especially when we
-                pass by a painter squatting by the side of the road diligently
-                turning the stone verge into a black-and-yellow masterpiece. A
-                skinny, clearly bored man casually and absent-mindedly waves a
-                branch of leaves to alert traffic that someone is doing his life’s
-                work there on the berm. His service may indeed keep the painter
-                alive.
+                Although a speed-limit sign reads 100 km/h, we drive no faster
+                than 80 km/h, and even that feels heroically fast, especially
+                when we pass by a painter squatting by the side of the road
+                diligently turning the stone verge into a black-and-yellow
+                masterpiece. A skinny, clearly bored man casually and
+                absent-mindedly waves a branch of leaves to alert traffic that
+                someone is doing his life’s work there on the berm. His service
+                may indeed keep the painter alive.
               </p>
               <blockquote
-                class="my-4 bg-white border-start border-2 p-4 fs-5"
+                class="my-4 font-bodoni border-start border-2 p-4 fs-5"
               >
-                A truck passes by whose driver wears a makeshift turban and has his
-                door wide open, probably because his air conditioning isn’t working.
+                A truck passes by whose driver wears a makeshift turban and has
+                his door wide open, probably because his air conditioning isn’t
+                working.
               </blockquote>
               <p>
                 His car is decorated with pumpkin garlands and is colourfully
                 painted. His rear door reads “Horn please” in big letters. The
-                traffic obeys, even though the driver himself honks even more. He
-                drives so fast and recklessly that we decide not to overtake him for
-                fear that otherwise we will never arrive in Himachal Pradesh.
+                traffic obeys, even though the driver himself honks even more.
+                He drives so fast and recklessly that we decide not to overtake
+                him for fear that otherwise we will never arrive in Himachal
+                Pradesh.
               </p>
               <p>
                 A 110cc motorbike manned by four people — with a baby on board —
                 does overtake us. Swerving and honking, it weaves through the
-                traffic. The driver navigates past motorbikes parked on the shoulder
-                whose drivers are taking a nap, seemingly unperturbed by the
-                symphony of horns from the passers-by. To them, all that honking and
-                reckless driving is evidently nothing alarming. Even the monkeys
-                playing tag and running over and past them do not interrupt their
-                siesta.
+                traffic. The driver navigates past motorbikes parked on the
+                shoulder whose drivers are taking a nap, seemingly unperturbed
+                by the symphony of horns from the passers-by. To them, all that
+                honking and reckless driving is evidently nothing alarming. Even
+                the monkeys playing tag and running over and past them do not
+                interrupt their siesta.
               </p>
-              <h5 class="mt-5 mb-3">For free: Delhi-belly</h5>
+              <h4 class="mt-5 mb-3 fw-bold">For free: Delhi-belly</h4>
               <p>
-                A herd of cows has found a spot next to a roadside restaurant where
-                we also stop because my daughter needs to use the washroom and we
-                are getting hungry. ‘I think I’ll be traumatised,’ she predicts with
-                mocking scepticism as she walks towards a building that looks like a
-                garbage place in the first place, but the sign ‘washroom’ makes it
-                clear it isn’t. And it doesn’t smell at all to fragrance sticks. I
-                laugh and cringe at the same time, hoping I don’t have to go to the
-                toilet soon whilst knowing I can’t put it off for all fourteen hours
-                of the trip.
+                A herd of cows has found a spot next to a roadside restaurant
+                where we also stop because my daughter needs to use the washroom
+                and we are getting hungry. ‘I think I’ll be traumatised,’ she
+                predicts with mocking scepticism as she walks towards a building
+                that looks like a garbage place in the first place, but the sign
+                ‘washroom’ makes it clear it isn’t. And it doesn’t smell at all
+                to fragrance sticks. I laugh and cringe at the same time, hoping
+                I don’t have to go to the toilet soon whilst knowing I can’t put
+                it off for all fourteen hours of the trip.
               </p>
             </article>
-    
-            </div>
-  
-            <div class="my-5">
-              <img class="img-fluid" src="img/3.jpg" alt="" />
-            </div>
+          </div>
 
-            <article>
-              <p>
-                Although, we have become used to such unsavoury facilities by now,
-                there is always that moment of dread when we are overwhelmed by the
-                stench of urine, dodge flies and possibly encounter a cockroach or
-                two, only to find nothing more than a hole in the ground for a
-                toilet.
-              </p>
-              <p>
-                Having survived the washroom ordeal, we venture into the restaurant
-                for dinner, even though the kitchen looks like it hasn’t been
-                cleaned in years. We take a seat at the only table that is not under
-                or next to a fan so that we reduce the risk of dust blowing up into
-                our food.
-              </p>
-              <p>
-                There is no cutlery, so we bathe our hands in hand sanitiser as our
-                lunch is served on dubious crockery that may have survived several
-                disasters and has likely never been washed. Nevertheless, we enjoy
-                the tastiest dal makhani, the airiest chapati, and the freshest
-                steamed rice ever. If the restaurant looked as good as the food
-                tastes, it would be the most visited place in no time.
-              </p>
-              <h5 class="mt-5 mb-3">Family reunions and dressed up elephants</h5>
-              <p>
-                With a full, satisfied stomach (and the hope that our fantastic but
-                likely unhygienically prepared food does not end up inspiring a case
-                of ‘Delhi belly’), we continue our drive and observe daily street
-                life unfolding on the parallel road. An elephant is waiting
-                patiently between parked motorbikes, its trunk painted in vibrant
-                colours — probably the most stylish elephant I have ever come
-                across.
-              </p>
-              <p>
-                In Punjab, we pass a truck with an open cargo bay, which is hosting
-                a mobile family reunion of sorts with at least 30 people sitting on
-                top of their luggage. On the other side, we see not cars, but a
-                camel approaching us. Once we have finally reached Himachal Pradesh,
-                we navigate through mountains, dodging potholes, craters, falling
-                rocks and impatient scooter riders. We feed our left-over snacks
-                (bananas) to the roadside monkeys.
-              </p>
-              <p>
-                And so our fourteen hour expedition comes to an end, proving that
-                the key to surviving a road trip in India is a mix of bold
-                manoeuvres, culinary courage and the occasional encounter with a
-                fashionable elephant.
-              </p>
-            </article>
+          <div class="my-5">
+            <img
+              class="img-fluid"
+              src="../../blog-assets/img/horn-please-img-1.png"
+              alt=""
+            />
+          </div>
+
+          <article>
+            <p>
+              Although, we have become used to such unsavoury facilities by now,
+              there is always that moment of dread when we are overwhelmed by
+              the stench of urine, dodge flies and possibly encounter a
+              cockroach or two, only to find nothing more than a hole in the
+              ground for a toilet.
+            </p>
+            <p>
+              Having survived the washroom ordeal, we venture into the
+              restaurant for dinner, even though the kitchen looks like it
+              hasn’t been cleaned in years. We take a seat at the only table
+              that is not under or next to a fan so that we reduce the risk of
+              dust blowing up into our food.
+            </p>
+            <p>
+              There is no cutlery, so we bathe our hands in hand sanitiser as
+              our lunch is served on dubious crockery that may have survived
+              several disasters and has likely never been washed. Nevertheless,
+              we enjoy the tastiest dal makhani, the airiest chapati, and the
+              freshest steamed rice ever. If the restaurant looked as good as
+              the food tastes, it would be the most visited place in no time.
+            </p>
+            <h4 class="mt-5 mb-3 fw-bold">
+              Family reunions and dressed up elephants
+            </h4>
+            <p>
+              With a full, satisfied stomach (and the hope that our fantastic
+              but likely unhygienically prepared food does not end up inspiring
+              a case of ‘Delhi belly’), we continue our drive and observe daily
+              street life unfolding on the parallel road. An elephant is waiting
+              patiently between parked motorbikes, its trunk painted in vibrant
+              colours — probably the most stylish elephant I have ever come
+              across.
+            </p>
+            <p>
+              In Punjab, we pass a truck with an open cargo bay, which is
+              hosting a mobile family reunion of sorts with at least 30 people
+              sitting on top of their luggage. On the other side, we see not
+              cars, but a camel approaching us. Once we have finally reached
+              Himachal Pradesh, we navigate through mountains, dodging potholes,
+              craters, falling rocks and impatient scooter riders. We feed our
+              left-over snacks (bananas) to the roadside monkeys.
+            </p>
+            <p>
+              And so our fourteen hour expedition comes to an end, proving that
+              the key to surviving a road trip in India is a mix of bold
+              manoeuvres, culinary courage and the occasional encounter with a
+              fashionable elephant.
+            </p>
+          </article>
 
           <section class="mt-5" id="article-cat-below">
             <!-- <div>
@@ -309,85 +368,32 @@
               <div class="btn btn-outline-dark btn-sm">Beyond wooden shoes</div>
             </div> -->
 
-
-
-
             <div class="mt-5">
-                <div class="d-flex flex-wrap blog-tags justify-content-between">
-                  <div>
-                    <a href="#" class="btn rounded-0"><i class="fa-solid fa-tags"></i></a>
-                    <a href="#" class="btn rounded-0">India</a>
-                    <a href="#" class="btn rounded-0">Delhi</a>
-                  </div>
-                  <a href="#" class="btn rounded-0">
-                    <i class="fa-solid fa-share me-2"></i>
-                    Story</a>
+              <div class="d-flex flex-wrap blog-tags justify-content-between">
+                <div>
+                  <a href="#" class="btn rounded-0"
+                    ><i class="fa-solid fa-tags"></i
+                  ></a>
+                  <a href="#" class="btn rounded-0">India</a>
+                  <a href="#" class="btn rounded-0">Delhi</a>
                 </div>
-            </div>
-
-
-            
-            
-            
-            
-    
-            <div class="container mt-5">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="">
-                  <div class="">
-                    <a href="#" class="text-decoration-none text-dark text-uppercase small text-body-secondary"
-                      ><i class="fa-solid fa-chevron-left me-2 "></i>Previous</a
-                    >
-                  </div>
-                  <p class="fw-medium fs-5 mt-4">Pinning my hopes on artificial rain</p>
-                </div>
-                <div class="">
-                  <div class="text-end">
-                    <a href="#" class="text-decoration-none text-dark text-uppercase small text-body-secondary"
-                    >Next<i class="fa-solid fa-chevron-right ms-2 "></i
-                      ></a>
-                    </div>
-                    <p class="fw-medium fs-5 mt-4 text-end">Finding the “care” in “healthcare”                </p>
-                </div>
-            </div>
-          
-            <div class="blog-comments my-5 pb-5">
-              <h3 class="mb-5">Leave a comment</h3>
-              <form action="">
-                <div class="row mb-4">
-                  <div class="col">
-                    <input type="text" class=" form-control border-0 border-bottom border-1 border-dark-subtle bg-transparent rounded-0" name="name" placeholder="Your Name*" id="">
-                  </div>
-                  <div class="col">
-                    <input type="Email" class="form-control border-0 border-bottom border-1 border-dark-subtle bg-transparent rounded-0" name="email" placeholder="Your Email*" id="">
-                  </div>
-                </div>
-                <textarea name="comment" class="form-control border-0 border-bottom border-1 border-dark-subtle bg-transparent rounded-0 mt-5 mb-4" id="" cols="30" rows="5" placeholder="Your Comment*"></textarea>
-    
-                <div class="form-check">
-                  <input type="checkbox" name="" id="" class="form-check-input">
-                  I agree that my submitted data is being collected and stored. *
-                </div>
-                <button class="btn mt-5 blog-form-submit px-4" type="submit">SUBMIT</button>
-    
-              </form>
+                <a href="#" class="btn rounded-0">
+                  <i class="fa-solid fa-share me-2"></i>
+                  Story</a
+                >
+              </div>
             </div>
           </section>
         </div>
         <div class="col-12 col-lg-4 py-5 mt-5">
-          <aside id="blogs-aside" >
+          <aside id="blogs-aside">
             <div id="inner-aside-blogs" class="p-4 mb-5">
-
               <div class="gap-3">
                 <div class="w-100 text-center">
-                  <p class="small muted mt-3">ABOUT ME</p>
-                  <img
-                   src="img/author.jpeg"
-                  alt=""
-                  class="w-100"
-                  />
+                  <p class="small muted mt-0">About the author</p>
+                  <img src="img/author.jpeg" alt="" class="w-100" />
                 </div>
-<!--               
+                <!--               
                 <div class="d-flex align-items-start flex-column">
                   <div class="d-flex flex-column mb-3">
                     <span class="text-uppercase text-dark fw-medium"
@@ -396,116 +402,135 @@
                     <span class="text-secondary">Author</span>
                   </div>
                 </div> -->
-                
               </div>
               <div class="mt-4 text-body">
-                
-                I've always loved to write. In my professional 
-                capacity, I engage in creating content for annual
-                
+                I've always loved to write. In my professional capacity, I
+                engage in creating content for annual
+
                 <div class="collapse mt-0" id="about-author-expand">
-                  reports, websites, 
-                  corporate videos, and internal magazines for corporate entities, 
-                  but my true passion is to write about topics that occupy me in everyday life.
-                  As Managing Director of a leadership-communication agency in India, 
-                  I am privileged to lead an exceptional team that is inspiring and 
-                  still growing. I work and live half of the year in Delhi which allows 
-                  me to experience local life with a depth and intimacy that is afforded 
-                  few ex-pats; I share many of my experiences and personal thoughts on 
-                  my blogs that are hopefully helpful to many others.
+                  reports, websites, corporate videos, and internal magazines
+                  for corporate entities, but my true passion is to write about
+                  topics that occupy me in everyday life. As Managing Director
+                  of a leadership-communication agency in India, I am privileged
+                  to lead an exceptional team that is inspiring and still
+                  growing. I work and live half of the year in Delhi which
+                  allows me to experience local life with a depth and intimacy
+                  that is afforded few ex-pats; I share many of my experiences
+                  and personal thoughts on my blogs that are hopefully helpful
+                  to many others.
                 </div>
-                <a data-bs-toggle="collapse" class="card-link small"
-                data-bs-target="#about-author-expand">Read more</a>
+                <a
+                  data-bs-toggle="collapse"
+                  class="card-link small"
+                  href="#about-author-expand"
+                  >Read more</a
+                >
               </div>
             </div>
 
-            <div class="p-4 bg-dark ">
-              <p class="text-white text-center">SUBSCRIBE TO MY NEWSLETTER</p>
+            <div class="p-4 bg-dark">
+              <p class="text-white text-center">Subscribe to my newsletter</p>
               <form>
-                <input type="text" class="form-control rounded-0 text-white text-center fw-light" placeholder="Your Email Address">
-                <button type="submit" class="btn btn-secondary rounded-0 text-white mt-3 w-100 small">SUBSCRIBE</button>
+                <input
+                  type="text"
+                  class="form-control rounded-0 text-white text-center fw-light"
+                  placeholder="Your email address"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-secondary rounded-0 text-white mt-3 w-100 small"
+                >
+                  Subscribe
+                </button>
               </form>
             </div>
 
             <div id="inner-aside-blogs" class="mt-5 p-4">
-              <p class="muted text-center text-uppercase">Follow Me On</p>
-                <div class="d-flex gap-2 justify-content-center" id="blog-article-social">
-                  <a href="https://www.instagram.com/joleneprins.com_blog/" class="instagram d-flex text-decoration-none p-3 align "><i class="fa-brands fa-instagram text-dark"></i></a>
-                  <a href="https://www.linkedin.com/in/jolene-prins-05311280/" class="linkedin d-flex text-decoration-none p-3 align "><i class="fa-brands fa-linkedin text-dark"></i></a>
-                  <a href="https://www.linkedin.com/in/jolene-prins-05311280/" class="d-flex text-decoration-none p-3 align ">
-                    <i class="fa-regular fa-envelope text-dark"></i></a>
-                  <a href="https://www.linkedin.com/in/jolene-prins-05311280/" class="d-flex text-decoration-none p-3 align ">
-                    <i class="fa-solid fa-link text-dark"></i>
-                    </a>
-                </div>
+              <p class="muted text-center">Follow me on</p>
+              <div
+                class="d-flex gap-2 justify-content-center"
+                id="blog-article-social"
+              >
+                <a
+                  href="https://www.instagram.com/joleneprins.com_blog/"
+                  class="instagram d-flex text-decoration-none p-3 align"
+                  ><i class="fa-brands fa-instagram text-dark"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/jolene-prins-05311280/"
+                  class="linkedin d-flex text-decoration-none p-3 align"
+                  ><i class="fa-brands fa-linkedin text-dark"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/jolene-prins-05311280/"
+                  class="d-flex text-decoration-none p-3 align"
+                >
+                  <i class="fa-regular fa-envelope text-dark"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/jolene-prins-05311280/"
+                  class="d-flex text-decoration-none p-3 align"
+                >
+                  <i class="fa-solid fa-link text-dark"></i>
+                </a>
+              </div>
             </div>
 
             <div id="inner-aside-blogs" class="mt-5 p-4">
-              <p class="muted text-center text-uppercase">Tags</p>
-                <div class="d-flex gap-2 flex-wrap blog-tags">
-                  <a href="#" class="btn rounded-0">India</a>
-                  <a href="#" class="btn rounded-0">Delhi</a>
-                  <a href="#" class="btn rounded-0">Story</a>
-                  <a href="#" class="btn rounded-0">Family</a>
-                  <a href="#" class="btn rounded-0">Travel</a>
-                  <a href="#" class="btn rounded-0">Travel</a>
-                  <a href="#" class="btn rounded-0">Travel</a>
-                  <a href="#" class="btn rounded-0">Travel</a>
-                </div>
+              <p class="muted text-center">Tags</p>
+              <div class="d-flex gap-2 flex-wrap blog-tags">
+                <a href="#" class="btn rounded-0">India</a>
+                <a href="#" class="btn rounded-0">Delhi</a>
+                <a href="#" class="btn rounded-0">Story</a>
+                <a href="#" class="btn rounded-0">Family</a>
+                <a href="#" class="btn rounded-0">Travel</a>
+                <a href="#" class="btn rounded-0">Travel</a>
+                <a href="#" class="btn rounded-0">Travel</a>
+                <a href="#" class="btn rounded-0">Travel</a>
+              </div>
             </div>
-
-
           </aside>
         </div>
       </main>
     </div>
 
     <div class="container">
-      <div class="blogs-related-blogs my-5">
-        <h3 class="my-5">
-          You May Also Like
-        </h3>
-  
-        <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 gy-5" id="pg-blog-wrapper">
-          <div class="col">
-            <div class="swiper-slide">
-              <img class="img-fluid stretched-link-img object-fit-cover post_featured-img" src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/12/For-website.jpg?resize=890%2C510&amp;ssl=1" alt="">
-              <div class="mt-4">
-                <h5 class="mt-3 fs-6 fw-medium text-center text-uppercase">
-                  HORN PLEASE!
-                </h5>
-                <div class="section-title">
-                  <div class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center">
-                    <span class="post_info_date span position-relative">4th Dec, 2023</span>
-                  </div>
-                  <p class="small">
-                    My daughter and I are driving up the Delhi-Jaipur expressway
-                    from Delhi towards Himachal Pradesh. It’s a fourteen hour
-                    drive, but we crave fresh air, so we go for ...
-                  </p>
-                  <a href="horn-please.html" class=" text-uppercase text-decoration-none readmore stretched-link">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="blogs-related-blogs my-5 pt-5">
+        <h3 class="my-5 text-center">You may also like</h3>
 
+        <div
+          class="row row-cols-1 row-cols-md-3 row-cols-xl-3 gy-5"
+          id="pg-blog-wrapper"
+        >
           <div class="col">
             <div class="swiper-slide">
-              <img class="img-fluid stretched-link-img object-fit-cover post_featured-img" src="img/jp-blog-2nd.webp" alt="">
+              <img
+                class="img-fluid stretched-link-img object-fit-cover post_featured-img"
+                src="img/jp-blog-2nd.webp"
+                alt=""
+              />
               <div class="mt-4">
-                <h5 class="mt-3 fs-6 fw-medium text-center text-uppercase">
+                <h5 class="mt-3 fs-5 fw-semibold text-center">
                   Pinning my hopes on artificial rain
                 </h5>
                 <div class="section-title">
-                  <div class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center">
-                    <span class="post_info_date span position-relative">21st November 2023</span>
+                  <div
+                    class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center"
+                  >
+                    <span class="post_info_date span position-relative"
+                      >21st November 2023</span
+                    >
                   </div>
                   <p class="small">
                     Today, I again smoked 30 cigarettes. Breathing in the Delhi
                     air around this time of the year is equivalent to this. When
                     wearing a mask, I might smoke “only” ...
                   </p>
-                  <a href="horn-please.html" class=" text-uppercase text-decoration-none readmore stretched-link">Read More</a>
+                  <a
+                    href="blog/beyond-the-saree/pinning-my-hopes-on-artificial-rain.html"
+                    class="text-decoration-none readmore stretched-link"
+                    >Read More</a
+                  >
                 </div>
               </div>
             </div>
@@ -513,40 +538,119 @@
 
           <div class="col">
             <div class="swiper-slide">
-              <img class="img-fluid stretched-link-img object-fit-cover post_featured-img" src="img/jp-bts-4.webp" alt="">
+              <img
+                class="img-fluid stretched-link-img object-fit-cover post_featured-img"
+                src="img/jp-bts-4.webp"
+                alt=""
+              />
               <div class="mt-4">
-                <h5 class="mt-3 fs-6 fw-medium text-center text-uppercase">
+                <h5 class="mt-3 fs-5 fw-semibold text-center">
                   Finding the “care” in “healthcare”
                 </h5>
                 <div class="section-title">
-                  <div class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center">
-                    <span class="post_info_date span position-relative">15th November 2023</span>
+                  <div
+                    class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center"
+                  >
+                    <span class="post_info_date span position-relative"
+                      >15th November 2023</span
+                    >
                   </div>
                   <p class="small">
                     My 18-year-old daughter and I had to temporarily interrupt
                     our trip through India because my little girl was feeling
                     increasingly lousy: nausea, ...
                   </p>
-                  <a href="horn-please.html" class=" text-uppercase text-decoration-none readmore stretched-link">Read More</a>
+                  <a
+                    href="blog/beyond-the-saree/finding-the-care-in-healthcare.html"
+                    class="text-decoration-none readmore stretched-link"
+                    >Read More</a
+                  >
                 </div>
               </div>
             </div>
           </div>
 
-
-
-   
-      
-
-
-      
-
-
-        
+          <div class="col">
+            <div class="swiper-slide">
+              <img
+                class="img-fluid stretched-link-img object-fit-cover post_featured-img"
+                src="img/jp-bts-3.webp"
+                alt=""
+              />
+              <div class="mt-4">
+                <h5 class="mt-3 fs-5 fw-semibold text-center">
+                  Do you like spicy food?
+                </h5>
+                <div class="section-title">
+                  <div
+                    class="fs-7 pg-blog-item mb-4 w-100 d-flex justify-content-center align-items-center"
+                  >
+                    <span class="post_info_date span position-relative"
+                      >10th November 2023</span
+                    >
+                  </div>
+                  <p class="small">
+                    ‘You really dress well!’ says an Indian woman to me at a
+                    Diwali festival, admiring my sari. These four words are
+                    quite innocent and certainly well ...
+                  </p>
+                  <a
+                    href="blog/beyond-the-saree/do-you-like-spicy-food.html"
+                    class="text-decoration-none readmore stretched-link"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
+      <div class="blog-comments my-5 py-5">
+        <h3 class="mb-5 text-center">Leave a comment</h3>
+        <form action="">
+          <div class="row mb-4">
+            <div class="col-12 col-md-6">
+              <label for="">Your name*</label>
+              <input
+                type="text"
+                class="mt-2 form-control py-3 border-bottom border-1 border-dark-subtle bg-transparent rounded-0"
+                name="name"
+                id=""
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="">Your email*</label>
+              <input
+                type="Email"
+                class="mt-2 form-control py-3 border-bottom border-1 border-dark-subtle bg-transparent rounded-0"
+                name="email"
+                id=""
+              />
+            </div>
+          </div>
+          <label for="" class="mt-4">Your comment*</label>
+          <textarea
+            name="comment"
+            class="mt-2 form-control py-3 border-bottom border-1 border-dark-subtle bg-transparent rounded-0 mb-4"
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+          <!--           
+          <div class="form-check">
+            <input type="checkbox" name="" id="" class="form-check-input">
+            I agree that my submitted data is being collected and stored. *
+          </div> -->
+          <button
+            class="btn mt-4 blog-form-submit fw-bolder py-3 px-5"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
     <footer
       class="d-flex align-items-center flex-column gap-5 pt-5 text-center"
     >
@@ -556,11 +660,17 @@
         src="img/JP-logo_horizontal_white.png"
         alt=""
       />
-      <div class="d-flex gap-4" id="footer-nav">
-        <a href="mystory.html" class="text-decoration-none text-light">My story</a>
+      <div class="d-flex gap-4 font-bodoni" id="footer-nav">
+        <a href="mystory.html" class="text-decoration-none text-light"
+          >My story</a
+        >
         <a href="blog.html" class="text-decoration-none text-light">Blogs</a>
-        <a href="gallery.html" class="text-decoration-none text-light">Gallery</a>
-        <a href="contact.html" class="text-decoration-none text-light">Contact</a>
+        <a href="gallery.html" class="text-decoration-none text-light"
+          >Gallery</a
+        >
+        <a href="contact.html" class="text-decoration-none text-light"
+          >Contact</a
+        >
       </div>
 
       <div class="d-flex flex-column align-items-center" id="footer-social">
@@ -580,10 +690,7 @@
             ></a>
           </li>
         </ul>
-        <div
-          class="d-flex mt-5 align-items-center justify-content-center gap-4"
-        >
-          
+        <div class="d-flex mt-5">
           <ul class="list-unstyled d-flex gap-2 align-items-center mb-0">
             <li>
               <a href="#" class="flag-country d-flex">
@@ -642,7 +749,7 @@
       .swiper-wrapper {
         gap: 5px;
       }
- 
+
       /* #main-article :first-child :nth-child(1)::first-letter {
         font-weight: bold;
         color: var(--black);
@@ -670,9 +777,7 @@
         display: block;
       }
 
-      
-      
-      #blog-article-social a { 
+      #blog-article-social a {
         transition: all 0.5s;
       }
       #blog-article-social a:hover {

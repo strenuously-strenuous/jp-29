@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("../fonts/bodoni/Bodoni/Bodoni Bold.ttf");
+/* @import url("../fonts/bodoni/Bodoni/Bodoni Bold.ttf"); */
 
 @font-face {
   font-family: Bodoni;
@@ -9,7 +9,8 @@
 @font-face {
   font-family: Bodoni;
   src: url("../fonts/bodoni/Bodoni-Bold.ttf") format("ttf");
-  font-weight: bold;
+  /* src: url("../fonts/bodoni/BODONI-N.TTF") format("ttf"); */
+  font-weight: 500;
 }
 @font-face {
   font-family: Bodoni;
@@ -17,11 +18,11 @@
   font-weight: 500;
 }
 
-/* @font-face {
+@font-face {
   font-family: Bodoni;
   src: url("../fonts/bodoni/bodoni\ bold\ bt.ttf");
   font-weight: 500;
-}  */
+}
 
 :root {
   --light-grey: #e6e8ea;
@@ -33,6 +34,8 @@
   --bs-heading-color: var(--black);
 
   --other-hightlighter: #cda193;
+
+  --bs-font-sans-serif: "Open Sans", sans-serif;
 }
 
 /* * {
@@ -42,7 +45,7 @@
 } */
 body {
   font-family: "Open sans", serif;
-  font-weight: 500 ;
+  font-weight: 500;
   color: var(--black) !important;
 }
 
@@ -329,7 +332,7 @@ header > video {
 }
 
 #bc-banner-blog {
-  background-image: url(../img/Jolene-Prins-Hero-blog.webp);
+  background-image: url(../img/croped-temp.jpg);
   background-position: center;
   padding: 200px 0;
 }
@@ -685,7 +688,7 @@ a[data-lightbox="roadtrip"] > .zoom-gallery-overlay {
   }
 }
 
-#main-article p {
+#main-article p, article p {
   font-size: 18px;
 }
 
@@ -822,4 +825,19 @@ footer a > i {
 
 div#swiper-latest-blog-parent {
   margin-bottom: -80px;
+}
+
+#first-letter-custom {
+  color: var(--black);
+  font-size: 87px;
+  height: 55px;
+  line-height: 62px;
+  margin: 0;
+  text-align: left;
+  width: auto !important;
+  min-width: 60px;
+  padding-right: 5px;
+  text-indent: 3px;
+  overflow: visible;
+  font-family: "Puppies Play", cursive;
 }
